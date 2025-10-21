@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import { Poppins } from 'next/font/google' // Memuat font Google Poppins secara teroptimasi (Next.js)
 import './globals.css' // Gaya global proyek
 import Navbar from '@/components/Navbar' // Navbar global di semua halaman
@@ -12,10 +13,12 @@ const poppins = Poppins({
 // Metadata global (SEO) untuk semua halaman
 export const metadata = {
   title: 'My Portfolio — Husnul Fikri Averus',
-  description: 'Website portofolio pribadi yang menampilkan proyek, skill, dan informasi tentang saya.',
+  description:
+    'Website portofolio pribadi yang menampilkan proyek, skill, dan informasi tentang saya.',
 }
 
-export default function RootLayout({ children }) {
+// ✅ Perbaikan: tambahkan tipe props untuk children
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
