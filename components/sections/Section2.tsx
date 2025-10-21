@@ -13,8 +13,8 @@ export default function Section2() {
 
       {/* biografi singkat */}
       <div className="flex justify-center">
-        <div className="flex w-1/2 flex-col items-center justify-center text-center">
-          <p className="text-xl font-semibold text-[#00b4d8]">Im a Developer</p>
+        <div className="flex w-1/2 flex-col items-center justify-center text-center">a
+          <p className="text-xl font-semibold text-[#00b4d8]">I'm a Developer</p>
           <p className="mb-3 text-2xl font-bold capitalize">i can build amazing web applications.</p>
           <p className="italic">
             Hello semuanya, Aku alfi, seorang developer yang berdedikasi untuk menciptakan solusi digital yang inovatif.
