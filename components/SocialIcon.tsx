@@ -1,6 +1,12 @@
 import Image from 'next/image'
 
-export default function SocialIcon({ src, alt, tooltip }) {
+interface SocialIconProps {
+  src: string
+  alt: string
+  tooltip: string
+}
+
+export default function SocialIcon({ src, alt, tooltip }: SocialIconProps) {
   return (
     <div className="group relative">
       <div className="rounded-xl border border-black bg-[#e9ecef] p-3 transition-all duration-300 hover:scale-110 hover:bg-[#ced4da]">
